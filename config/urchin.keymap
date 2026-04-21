@@ -7,12 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&sk {
-    // don't release mods on other mods presses
-
-    ignore-modifiers;
-};
-
 / {
     behaviors {
         // Enables holding the first mod-tap key
