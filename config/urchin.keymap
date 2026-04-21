@@ -1,17 +1,9 @@
+#include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <input/processors.dtsi>
 
 / {
-    behaviors {
-    };
-
-    macros {
-    };
-
-    combos {
-        compatible = "zmk,combos";
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -26,8 +18,7 @@
             >;
         };
 
-
-        layer_1 {
+        arrow_numpad {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -36,7 +27,7 @@
             >;
         };
 
-        layer_2 {
+        function_system {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
