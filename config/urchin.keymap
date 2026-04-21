@@ -1,38 +1,20 @@
-/*
- * Copyright (c) 2020 duckyb
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <input/processors.dtsi>
 
 / {
     behaviors {
-        // Enables holding the first mod-tap key
-        // by performing a tap-release-hold sequence.
-        // To use it: "&qt KEYCODE1 KEYCODE2"
     };
 
     macros {
-        // sometimes my device thinks a modifier is being held down
-        // pressing all modifiers fixes it.
     };
 
     combos {
         compatible = "zmk,combos";
-
-        // both right thumb keys
-        // internal-left & external-right thumb keys
-        // both left thumb keys
-        // left index & middle fingers (home-row)
-        // hold control & space for Adobe workflow
     };
 
     keymap {
         compatible = "zmk,keymap";
-
-        // Base alpha layer
 
         default_layer {
             label = "Base";
@@ -44,12 +26,6 @@
             >;
         };
 
-        // Numbers and high frequency symbols
-        // Main modifiers and arrow keys
-        // Function keys with modifiers
-        // Low frequency symbols.
-        // Used to type regional accents.
-        // Used to change the keyboard's settings.
 
         layer_1 {
             bindings = <
